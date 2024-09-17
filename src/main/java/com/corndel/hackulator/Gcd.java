@@ -9,10 +9,11 @@ public class Gcd {
    * <p>gcd(8, 12) => 4
    */
   static int gcd(int a, int b) {
-    while (a != 0) {
-      var temp = a;
-      a = b % a;
+    while (b != 0)  {
+      var temp = b;
+      b = a% b;
+      a = temp;
     }
-    return b;
+    return a;
   }
 }

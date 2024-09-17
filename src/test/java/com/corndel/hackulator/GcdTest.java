@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 public class GcdTest {
   @Test
   void gcdTwoPositive() {
-    assertEquals(gcd(8, 12), 4);
+    assertEquals(gcd(12, 8), 4);
     assertEquals(gcd(10, 45), 5);
   }
 
@@ -25,5 +25,9 @@ public class GcdTest {
   @Test
   void gcdBig() {
     assertEquals(gcd(1701, 3786), 3);
+  }
+  @Test
+  void gcdSwapped() {
+    assertEquals(gcd(7367, 3786), 1);
   }
 }
