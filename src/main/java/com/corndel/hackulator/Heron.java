@@ -7,6 +7,10 @@ public class Heron {
    * https://en.wikipedia.org/wiki/Heron%27s_formula
    */
   static double heron(double a, double b, double c) {
-    return Math.sqrt(0.0);
+   double semiPerimeter= (a+b+c)/2;
+    double areaSquared= (semiPerimeter*(semiPerimeter-a)*(semiPerimeter-b)*(semiPerimeter-c));
+    double area = Math.sqrt(areaSquared);
+    return area;
+
   }
 }
